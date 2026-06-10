@@ -88,6 +88,6 @@ export function generateGuestCredentials(): { username: string; password: string
   return {
     username,
     password: randomString(12),
-    email: `${username}@guest.local`,
+    email: `${username}@guest.example`,
   };
 }
