@@ -42,6 +42,7 @@ export function UsersPage() {
 
   const generateGuest = useMutation({
     mutationFn: async () => {
+      setBanner(null);
       const c = generateGuestCredentials();
       await adminApi.createUser({
         email: c.email,
